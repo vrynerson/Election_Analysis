@@ -38,3 +38,39 @@ elif score >= 60:
     print('Your grade is a D.')
 else:
     print('Your grade is an F.')
+    
+candidate_votes = int(input("How many votes did the candidate get in the election? "))
+total_votes = int(input("What is the total number of votes in the election? "))
+message_to_candidate = (
+    f"You received {candidate_votes:,} number of votes. "
+    f"The total number of votes in the election was {total_votes:,}. "
+    f"You received {candidate_votes / total_votes * 100:.2f}% of the total votes. ")
+print(message_to_candidate)
+
+#The data we need to retrieve.
+# Assign a variable for the file to load and the path.
+file_to_load = 'C:\Users\vryne\Election_Analysis\Resources\election_results.csv'
+# Open the election results and read the file.
+election_data = open(file_to_load, 'r')
+#with open(file_to_load) as election_data:
+#To do: perform analysis.
+#print('C:\Users\vryne\Election_Analysis\Resources\election_results.csv')
+# Close the file.
+election_data.close()
+
+#could not get this file to open 4.14.2022
+import csv
+import os
+# Assign a variable for the file to load and the path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Open the election results and read the file.
+with open(file_to_load) as election_data:
+    # To do: read and analyze the data here.
+    # Read the file object with the reader function.
+    file_reader = csv.reader(election_data)
+
+
+# Create a filename variable to a direct or indirect path to the file.
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+# Using the open() function with the "w" mode we will write data to the file.
+open(file_to_save, "w")
