@@ -1,6 +1,6 @@
 # Election_Analysis
 ## Project Overview
-A Colorado board of Elections employee has given the following list to audit a local congressional election data.
+A Colorado Board of Elections employee has given the following list to audit a local congressional election data.
 
 1. The total number of votes cast
 2. A complete list of candidates who received votes
