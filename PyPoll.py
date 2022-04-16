@@ -79,6 +79,11 @@ with open(file_to_load) as election_data:
             print(candidate_results)
             #Save candidate results to our text file
             txt_file.write(candidate_results)
+            
+
+            candidate_received = (f"{candidate_name} received {vote_percentage:.1f}% of the vote and ({votes:,}) number of votes.\n")
+            print(candidate_received)
+            txt_file.write(candidate_received)
             # Determine winning vote count, winning percentage, and winning candidate.
             if (votes > winning_count) and (vote_percentage > winning_percentage):
                 winning_count = votes
