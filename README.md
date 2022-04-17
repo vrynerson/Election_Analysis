@@ -43,7 +43,8 @@ Results: [election_analysis.txt](https://github.com/vrynerson/Election_Analysis/
 
 ## Election-Audit Summary
 The script written for the congressional election can be transferred to use in any election. Changing files, variable names, and strings to reflect the new data in quesiton to reuse this code would make for efficient use of time. Examples are shown below. 
-**Example 1: Change the data file.
+
+**Example 1: Change the data file.**
 ```
 # Add our dependencies.
 import csv
@@ -59,7 +60,7 @@ The code `import csv` can be altered to accomodate a different data storage file
 The code `file_to_load = os.path.join("Resources", "election_results.csv")` can be changed to load any file that holds the desired election's data by changing to the relative file name.
 The code `file_to_save = os.path.join("analysis", "election_analysis.txt")` can be changed to the file the data wants to be written to.
 
-**Example 2: Select where the data is pulled from.
+**Example 2: Select where the data is pulled from.**
  ```
  for row in reader:
 
