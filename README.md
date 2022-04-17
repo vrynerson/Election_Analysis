@@ -37,9 +37,6 @@ Votes are gathered into a csv file and sorted by column A: Ballot ID, column B: 
   * **Candidate Diana DeGette**, who received **73.8%** of the vote and 272,892 number of votes, won the election based on popular vote.
 
 Results: [election_analysis.txt](https://github.com/vrynerson/Election_Analysis/blob/main/analysis/election_analysis.txt)
-## Resources
--Data Source: [election_results.csv](https://github.com/vrynerson/Election_Analysis/blob/main/Resources/election_results.csv)  
--Software: Python 3.7, Visual Studio Code 1.66.2   
 
 ## Election-Audit Summary
 The script written for the congressional election can be transferred to use in any election. Changing files, variable names, and strings to reflect the new data in quesiton to reuse this code would make for efficient use of time. Examples are shown below. 
@@ -74,3 +71,7 @@ The code `file_to_save = os.path.join("analysis", "election_analysis.txt")` can 
         counties = row[1]
 ```
 This code is used to select what data is being used for each variable. The code `candidate_name = row[2]` is taking data from Row 3, which has candidate data. The code `counties = row[1]` is using data from Row 2, which has data on which county a voter is in. To use it for a different election, the variables `candidate_name` or `counties` and the strings `row[1]` and `row[2]` would need to be changed to reflect the data they are representing.
+
+## Resources
+-Data Source: [election_results.csv](https://github.com/vrynerson/Election_Analysis/blob/main/Resources/election_results.csv)  
+-Software: Python 3.7, Visual Studio Code 1.66.2   
